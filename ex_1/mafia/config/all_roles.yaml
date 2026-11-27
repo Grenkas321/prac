@@ -1,0 +1,46 @@
+# Все 35 дополнительных ролей из задания сразу.
+# Нужно не меньше 40 игроков при k = 3: 11 мафиозных ролей + хотя бы один
+# обычный мафиози = 12 <= floor(40 / 3) = 13; 24 роли мирных и одиночек
+# помещаются в 40 - 13 - 3 = 24 места мирных.
+#   ./build/make/mafia --players 40 --config config/all_roles.yaml
+k: 3
+extra_roles:
+  # статусы мирных жителей
+  #- revive_commissar
+  #- jailer
+  #- priest
+  #- journalist
+  #- donor
+  #- cattani
+  #- blade
+  #- executioner
+  #- ears
+  #- prankster
+  # помощники комиссара
+  #- reanimator
+  - bodyguard
+  #- samurai
+  #- witness
+  #- elder
+  #- sergeant
+  #- fan
+  #- spy
+  - necromancer
+  #- drunk
+  # специализированные мафиози (подкидыш — мирный)
+  #- thief
+  #- killer
+  #- advocate
+  #- slanderer
+  - ninja
+  #- kamikaze
+  #- boss
+  #- kidnapper
+  #- foundling
+  - bull
+  #- paranoid
+  # одиночки и нейтральные
+  #- poisoner
+  #- hacker
+  #- swindler
+  #- werewolf

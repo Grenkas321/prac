@@ -1,0 +1,16 @@
+# Все артефакты сборки (и Makefile, и CMake) лежат в build/
+build/
+
+# Объектные файлы и бинарники, если кто-то соберёт вручную мимо build/
+*.o
+*.d
+/mafia
+
+# Файлы IDE и редакторов
+.vscode/
+.idea/
+*.swp
+compile_commands.json
+
+# Журналы партий
+logs/
